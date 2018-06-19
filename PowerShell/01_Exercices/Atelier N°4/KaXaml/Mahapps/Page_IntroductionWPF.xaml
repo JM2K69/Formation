@@ -1,0 +1,71 @@
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+      xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks">
+		
+	<Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+		            <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+				        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/controls.AnimatedTabControl.xaml" />
+				    </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>	
+
+
+	<Grid>
+	        
+			<StackPanel>
+					
+			<Image Name="Logo" Source="logo-btssio.png" Margin="30,0,0,0" Width="90" Height="80" HorizontalAlignment="Left"></Image>
+				<StackPanel Margin="0,-60,0,0" Orientation="Horizontal" HorizontalAlignment="Center">
+					<StackPanel   Margin="0,0,0,0" Orientation="Horizontal" >
+						<Image Source="PC.png" Width="290" Height="80" ></Image>
+						<Label FontSize="40"  Content=" Introduction" Foreground="#FF444444" Margin="-80,15,0,0" ></Label>
+						<Label FontSize="40"  Content="WPF" Foreground="#FF094FA3" Margin="0,15,0,0"></Label>	
+						<Label FontSize="40"  Content="XAML" Foreground="#FF444444" Margin="0,15,0,0"></Label>								
+					</StackPanel>		
+				</StackPanel>
+				
+  <StackPanel Margin="30,40,0,0" Orientation="Horizontal">
+  <Rectangle Width="60" Height="40"  Fill="#FF8E455E">
+									<Rectangle.OpacityMask>
+										<VisualBrush Stretch="Fill" Visual="{iconPacks:PackIcon {x:Static iconPacks:PackIconMaterialKind.Laptop}}"/>
+									</Rectangle.OpacityMask>
+								</Rectangle>
+  <Label Name="ComputerName" Content="Computer Name :" Margin="5,25,0,0" FontSize="15" FontWeight="Bold"></Label>
+  <Label Name="R_Computer" Content="" Margin="5,25,0,0" FontSize="15" FontWeight="Bold" Foreground="#FF0937A3"></Label>
+  </StackPanel>
+  
+   <StackPanel Margin="30,10,0,0" Orientation="Horizontal">
+   <Rectangle Width="60" Height="60"  Fill="#FF5B458E">
+									<Rectangle.OpacityMask>
+										<VisualBrush Stretch="Fill" Visual="{iconPacks:PackIcon {x:Static iconPacks:PackIconMaterialKind.Memory}}"/>
+									</Rectangle.OpacityMask>
+								</Rectangle>
+  <Label Name="RAM" Content="Ram Installed :" Margin="5,25,0,0" FontSize="15" FontWeight="Bold"></Label>
+  <Label Name="R_RAM" Content="" Margin="5,25,0,0" FontSize="15" FontWeight="Bold" Foreground="#FF0937A3"></Label>
+
+</StackPanel>
+  <StackPanel Margin="30,10,0,0" Orientation="Horizontal">
+    <iconPacks:PackIconModern Kind="Network" Width="60" Height="60" />
+  <Label Name="C_ADDIPV4" Content="Curent Address IPv4 :" Margin="5,25,0,0" FontSize="15" FontWeight="Bold"></Label>
+   <Label Name="R_IPv4" Content="" Margin="5,25,0,0" FontSize="15" FontWeight="Bold" Foreground="#FF0937A3"></Label>
+
+</StackPanel>
+
+  </StackPanel>
+ <StackPanel HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Bottom" Orientation="Vertical">
+  <StackPanel Margin="0,2,0,0" Orientation="Horizontal">
+    <Button Name="Check" Width="155" Height="40" Margin="5,0,0,0" Background="#00a300" BorderThickness="0" Content="Check" Foreground="White"></Button>
+    <Button Name="Exit" Width="155" Height="40" Margin="5,0,0,0" Background="#CEE71414" BorderThickness="0" Content="Exit Application" Foreground="White"></Button>
+         </StackPanel>
+      </StackPanel>
+   
+</Grid>
+
+</Page>
