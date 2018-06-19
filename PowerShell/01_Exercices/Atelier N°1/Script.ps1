@@ -6,11 +6,6 @@
         #Utiliser des variables ! ! 
     # Lister toutes les commande pour les cartes réseaux
         Get-Command -Module NetAdapter 
-    # Lister Les Rôles "Pour les Serveurs Uniquement" 
-        Get-windowsFeature
-    # Installer un Rôle 
-    Install-windowsFeature -name 'Feature Name' -IncludeAllSubFeature -IncludeManagementTools 
-    # Création d'un Domaine ADDS
-    Install-ADDSforest -DomainName 'Nom de domaine' 
+    
 
     
