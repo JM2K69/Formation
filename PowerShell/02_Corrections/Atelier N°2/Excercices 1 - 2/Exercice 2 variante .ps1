@@ -134,7 +134,7 @@ foreach ($S in $Sites)
             GivenName = $user.name.first
             Surname = $user.name.last
             Path = "OU=$F,OU=$S,OU=Ecole,DC=$Dom,DC=$EXT"
-            title = "Eèves de $F"
+            title = "Elèves de $F"
             department="$F"
             OfficePhone = $user.phone
             MobilePhone = $user.cell

@@ -1,4 +1,11 @@
 #Informations et Aide
+      # Lister Les Rôles "Pour les serveurs uniquement" 
+      Get-windowsFeature
+      # Installer un Rôle 
+           Install-windowsFeature -name 'Feature Name' -IncludeAllSubFeature -IncludeManagementTools 
+      # Création d'un Domaine ADDS
+          Install-ADDSforest -DomainName 'Nom de domaine' 
+          
     # Recuperations des informations du domaine AD
         $fqdn = Get-ADDomain
         $fulldomain = $fqdn.DNSRoot
